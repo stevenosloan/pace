@@ -1,4 +1,4 @@
-//= require 'src/jquery-1.7.2.min'
+//= require 'lib/jquery-1.8.0.min'
 
 LoadedFunction.site = true;
 
