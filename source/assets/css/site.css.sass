@@ -1,0 +1,78 @@
+@import "normalize.scss"
+@import "mixins.scss"
+
+@font-face
+  font-family: "Vollkorn"
+  font-style: normal
+  font-weight: 400
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(http://themes.googleusercontent.com/static/fonts/vollkorn/v3/BCFBp4rt5gxxFrX6F12DKnYhjbSpvc47ee6xR_80Hnw.woff) format('woff')
+
+body, html
+  height: 100%
+  width: 100%
+
+body
+  font-size: 16px
+  line-height: 1.2
+  color: #fff
+  -webkit-font-smoothing: antialiased
+
+#page
+  width: 8 * 100%
+  height: 100%
+
+.table
+  display: table
+  height: 100%
+  width: 480px
+  margin: 0 auto
+  float: left
+  background: #2463DB
+  @include box-sizing
+  padding: 0 2em
+  &.size1of1
+    width: 3/30 * 100%
+    opacity: 1.0
+  &.size1of2
+    width: 2.5/30 * 100%
+    opacity: 0.8
+  &.size1of4
+    width: 2/30 * 100%
+    opacity: 0.6
+  &.size1of8
+    width: 1.5/30 * 100%
+    opacity: 0.4
+  &.size1of16
+    width: 1/30 * 100%
+    opacity: 0.2
+
+
+
+.block-post
+  display: table-cell
+  vertical-align: middle
+  position: relative
+  bottom: 2em
+  padding-left: 14px
+
+.quote
+  max-width: 480px
+  font-family: Vollkorn, "Comic Sans"
+  font-size: 36px
+  text-indent: -14px
+  margin: .5em auto
+
+.author
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+  font-weight: bold
+  margin: 0 auto
+  max-width: 480px
+  opacity: 0.6
+  &:before
+    width: 2.6875em
+    height: .8125em
+    display: block
+    content: ''
+    background: #fff
+    margin: 0 0 2em 0
+    opacity: 0.3
